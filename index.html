@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding: 0%;
+           
+        }
+        .main-parent{
+            height: 3800px;
+           
+            background-color: #F1F2F4;
+            
+        }
+        .navbar{
+            background-color: rgb(131, 131, 207);
+           
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            top: 0px;
+           
+       
+        }
+        .flip-image{
+            /* background-color: antiquewhite; */
+            padding: 12px;
+            margin-left: 100px;
+            animation: bounce 20s ease-in 0s normal;
+            
+        }
+        @keyframes bounce {
+            from{
+                transform: rotate(0deg);
+            }
+            to{
+                transform: rotate(180deg);
+            }
+            
+        }
+        /* .flip-image:hover{
+            transform: skew(50deg);
+            transition: all 1s ease-in 0s;
+            
+            background-color:pink;
+        } */
+        .search-bar{
+            margin-right: 90px;
+            background-color: aliceblue;
+            /* padding:10px; */
+           display:flex;
+           flex-direction: row;
+           font-size: larger;
+          
+           
+            
+        }
+        .login-bar{
+            display: flex;
+            margin-right: 90px;
+           
+            
+            
+            /* background-color: rgb(75, 77, 77); */
+            
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+
+           height:50px;
+            width:400px;
+        }
+        .login:hover{
+            background-color: rgb(59, 59, 230);
+            border-radius: 2px;
+            /* transform: rotate(10deg); */
+            transform: skew(50deg);
+            width: 80px;
+            color: white;
+        }
+        .container-img{
+            background-color: white;
+          
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            /* border: 1px solid #b0a7a7; */
+            margin: 8px 160px;
+           
+            /* box-sizing: border-box; */
+           
+            
+        }
+        .container-item{
+            /* background-color: antiquewhite; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+    
+        .container
+        {
+            background-color: rgb(255, 255, 255);
+            height: 320px;
+            margin: 0px 160px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: 20px;
+           
+           
+            
+
+        }
+        .items
+        {
+            background-color: rgb(255, 255, 255);
+            height: 252px;
+            width: 200px;
+            border: 1px  solid grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            
+           
+            
+
+        }
+        .container img
+        {
+            width: 50px;
+            height: 180px;
+            
+        }
+        .toys-container{
+            /* background-color: aquamarine; */
+            background-color: rgb(255, 255, 255);
+            
+            height: 320px;
+            
+            margin: 0px 160px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+
+            overflow: scroll;
+            scrollbar-width: none;
+            gap: 20px;
+           
+            
+
+        }
+        .toys{
+            /* background-color: burlywood; */
+            
+            background-color:rgb(255, 255, 255);
+            height: 252px;
+            width: 210px;
+            border: 1px solid grey;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            margin-left:25px;
+
+           
+        }
+        .toys-container img{
+            width: 50px;
+            height:180px;
+            
+        }
+
+        .main{
+            height:600px;
+            /* border: 1px solid rgb(87, 54, 54); */
+            /* background-color: rgb(220, 90, 90); */
+            width: 1500px;
+            margin: 10px 160px;
+            display: grid;
+            grid-template-columns: 500px 480px 490px ;
+            grid-template-rows: 300px 300px;
+            /* column-gap:2px; */
+           
+           
+           
+        }
+        .parent,.g1,.g2{
+            background-color: white;
+            /* border: 1px solid rgb(31, 28, 28); */
+            height: 650px;
+            width: 460px;
+            gap: 10px;
+          
+            display: grid;
+            grid-template-columns: 220px 220px ;
+            grid-template-rows: 300px 400px;
+            
+        }
+        .child{
+            /* background-color: peru; */
+            border: 1px solid rgb(200, 202, 197);
+            border-radius: 10px;
+            width: 210px;
+            height: 270px;
+            margin-left: 20px;
+            margin-top: 20px;
+            
+        }
+        .footer
+        {
+            background-color:rgb(62, 62, 62);
+            height: 400px;
+            display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        justify-items: center;
+       
+        }
+        .box{
+            /* background-color: aquamarine; */
+            margin-top: 20px;
+            height: 300px;
+            width: 400px;
+            color: whitesmoke;
+            
+        }
+      
+      
+    </style>
+</head>
+<body>
+    <div class=" main-parent">
+        <div class="navbar" >
+            <!--first div for flipkart image-->
+            <div class="flip-image">
+            <img src="fkheaderlogo_exploreplus-44005d.svg" >
+            </div>
+            <div class="search-bar">
+                <div class="search-icon"><i class="ri-search-line" style="width: 20px;"></i>
+                    <input type="text" placeholder="search for the products,brands and more" style="font-size:large;width: 700px;height: 50px;border:none;">
+                </div> 
+            </div>
+            <div class="login-bar">
+                    <p class="login" style="border-radius: 10px 10px 10px 10px; padding: 10px; font-size:20px"><i class="ri-account-circle-line"></i>Login<i class="ri-arrow-down-s-line"></i></p>
+                    <p class="cart" style="font-size: 20px;" ><i class="ri-shopping-cart-2-line" style="font-size: 25px;"></i>cart</p>
+                    <p class="seller"  style="font-size: 20px;"><i class="ri-store-line"></i>Become a Seller</p>
+                    <p><i class="ri-more-2-line"></i></p>
+            </div>
+            
+        </div>
+        <!--2nd div tag-->
+        <div class="container-img " style=" height: 120px; " >
+            
+            <div class="container-item">
+                <img src="mobile.webp" alt="image not found" width="64px" height="64px" style="margin-top: 10px; ">
+                <!-- Mobiles<input type="text" name="Mobiles" style="font-size: small;"> -->
+                <p style="font-size: medium;">Mobiles</p>
+            </div>
+                <div class="container-item">
+                    <img src="29327f40e9c4d26b.webp" alt="image not found" width="64px" height="60px" style="margin-top: 10px;"><p>Grocery</p>
+                </div>
+                    <div class="container-item">
+                        <img src="appliance1.webp" alt="image not available" width="64px" height="60px"><p>Appliances</p>
+                    </div>
+                        <div class="container-item">
+                            <img src="aeroplane.webp" alt="image isn`t available" width="50px" height="60px"><p>aeroplane</p>
+                        </div>
+                            <div class="container-item">
+                                <img src="ab7e2b022a4587dd.webp" alt="image not found" width="60px" height="60px"><br><p style="font-size: medium; ">Home&Furniture<i class="ri-arrow-down-s-line"></i></p>
+                            </div>
+                                <div class="container-item">
+                                    <img src="fashion.webp" alt="image isnt available" width="50px" height="60px"><p>Fashion<i class="ri-arrow-down-s-line"></i></p>
+                                </div>
+                                    <div class="container-item">
+                                        <img src="05d708653beff580.webp" alt="image not found" width="60px" height="60px"> <p>Two wheelers<i class="ri-arrow-down-s-line"></i></p>
+                                    </div>
+                                        <div class="container-item">
+                                            <img src="dff3f7adcf3a90c6 (1).webp" alt="image not found" width="60px" height="60px">
+                                            <p>Beauty&Products<i class="ri-arrow-down-s-line"></i></p>
+                                        </div>
+            
+        </div>
+
+        <div class="third-div">
+           
+                
+         <!-- <b><p >Best of Electronics</p></b> -->
+         <p style="margin: 0px 160px;height: 30px; background-color: white;font-size:20px;font-family:
+         inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif; text-align: start; padding: 18px 22px ;margin-top: 20px;" >Best Of Electronics</p>
+             <div class="container">
+                
+         
+                 <div class="items">
+                     <img style="height: 180px; width: 50px;" src="https://rukminim2.flixcart.com/image/210/210/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=90" alt="">
+                     <p>Speaker</p>
+                 </div>
+                 <div class="items">
+                     <img  style="height: 180px; width: 150px;" src="https://rukminim2.flixcart.com/image/420/420/xif0q/monitor/n/r/g/-original-imagyr8vrpzzgrac.jpeg?q=60" alt="">
+                     <p>Television</p>
+                 </div>
+                 <div class="items">
+                     <img  style="height: 180px; width: 150px;" src="https://rukminim2.flixcart.com/image/210/210/xif0q/projector/b/4/t/i9-pro-10-ei9027-led-projector-egate-original-imah3t9zfxufhdze.jpeg?q=90" alt="">
+                     <p>projector</p>
+                 </div>
+                 <div class="items">
+                     <img style="height: 180px;width: 150px;" src="https://rukminim2.flixcart.com/image/420/420/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                     <p>System</p>
+         
+                 </div>
+                 <div class="items">
+                     <img style="height: 190px;width: 100px;" src="https://rukminim2.flixcart.com/image/420/420/kpsnzww0/external-hard-drive/ssd/t/9/7/portable-ssd-sdssde30-1t00-g25-sandisk-original-imag3xx564jxpgrb.jpeg?q=60" alt="">
+                 <p> Sanddisk</p>
+                 </div>
+                 <div class="items">
+                     <img style="height: 180px; width: 150px;" src="https://rukminim2.flixcart.com/image/420/420/k3rmm4w0/point-shoot-camera/f/n/v/kids-point-and-shoot-digital-camera-point-and-shoot-kids-point-original-imafknpazf7dhses.jpeg?q=60" alt="">
+                     <p>Camera</p>
+                 </div>
+            
+
+        </div>
+
+        <div class="forth-div">
+
+            <!--this div for toys products -->
+            <p style="margin:0px 160px; background-color:white ; padding: 16px; height: 30px; text-align: start; margin-bottom: 0px;margin-top:20px; font-size:20px; font-family: inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif;">Beauty and toy products</p>
+            <div class="toys-container">
+
+            <div class="toys">
+                <img style="height: 180px; width: 200px;" src="https://rukminim2.flixcart.com/image/210/210/k0plpjk0/remote-control-toy/9/g/k/4-function-remote-control-high-speed-big-racing-car-toy-funkey-original-imafkg33umd8dy93.jpeg?q=90" alt="">
+                <p>Car</p>
+
+            </div>
+            <div class="toys">
+                <img style="height: 180px; width: 200px;"src="https://rukminim2.flixcart.com/image/210/210/kzegk280/action-figure/9/v/t/3-30155-mcfarlane-2-5-original-imagbeyyzehpyk2m.jpeg?q=90" alt="">
+                <p>spidertoy</p>
+
+            </div>
+            <div class="toys">
+                <img style="height: 180px; width: 200px;" src="https://rukminim2.flixcart.com/image/420/420/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=60" alt="">
+                <p>Cycle</p>
+
+            </div>
+            <div class="toys">
+                <img style="height: 180px; width: 200px;" src="https://rukminim2.flixcart.com/image/420/420/krtjgcw0/microphone/x/h/j/3-5mm-clip-metal-microphone-for-voice-recording-lapel-mic-mobile-original-imag5gxrug6fcbct.jpeg?q=60" alt="">
+                <p>MicroPhone</p>
+
+            </div>
+            <div class="toys">
+               <img style="height: 180px; width: 200px;" src="https://rukminim2.flixcart.com/image/420/420/jxz0brk0/stuffed-toy/n/t/s/4-feet-pink-very-beautiful-best-quality-for-special-gift-125-13-original-imafgv92puzkdytg.jpeg?q=60" alt="">
+                <p>Teddy</p>
+            </div>
+
+            <div class="toys">
+                <img style="height: 180px; width: 200px;" src="https://rukminim2.flixcart.com/image/420/420/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=60" alt="">
+                <p>Pens</p>
+
+            </div>
+            <div class="toys">
+                <img style="height: 180px; width: 200px;" src="https://rukminim2.flixcart.com/image/420/420/k6fd47k0/nut-dry-fruit/p/z/7/200-100-natural-california-pouch-happilo-original-imafzvw2tcazeur6.jpeg?q=60" alt="">
+                <p>Almonds</p>
+            </div>
+            <div class="toys">
+                <img style="height: 180px; width: 200px;"src="https://rukminim2.flixcart.com/image/420/420/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=60" alt="">
+                <p>Dry friuts</p>
+            </div>
+            <div class="toys">
+                <img style="height: 180px; width: 200px;" src="https://rukminim2.flixcart.com/image/420/420/krtjgcw0/microphone/x/h/j/3-5mm-clip-metal-microphone-for-voice-recording-lapel-mic-mobile-original-imag5gxrug6fcbct.jpeg?q=60" alt="">
+                <p>MicroPhone</p>
+        
+            </div>
+            <div class="toys">
+                <img style="height: 180px; width: 200px;" src="https://rukminim2.flixcart.com/image/420/420/kx50gi80/pen/h/z/k/119766-flair-original-imag9nzubznagufg.jpeg?q=60" alt="">
+                <p>Pens</p>
+
+            </div>
+            <div class="toys">
+                <img style="height: 180px; width: 200px;" src="https://rukminim2.flixcart.com/image/420/420/l111lzk0/cycle/m/r/e/xc-900-grey-lite-26-15-5-cradiac-21-gear-120-original-imagczuzpxeweczm.jpeg?q=60" alt="">
+                <p>Cycle</p>
+
+            </div>
+            <div class="toys">
+                <img style="height: 180px; width: 200px;" src="https://rukminim2.flixcart.com/image/420/420/k6fd47k0/nut-dry-fruit/p/z/7/200-100-natural-california-pouch-happilo-original-imafzvw2tcazeur6.jpeg?q=60" alt="">
+                <p>Almonds</p>
+            </div>
+            <div class="toys">
+                <img style="height: 180px; width: 200px;"src="https://rukminim2.flixcart.com/image/420/420/kzzw5u80/coffee/s/b/x/-original-imagbwf3wvhzfh5z.jpeg?q=60" alt="">
+                <p>Dry friuts</p>
+            </div>
+        </div>
+
+        <!-- <div class="fifth-div" > -->
+            <!-- <p style="margin:0px 160px; background-color:white ; padding: 16px; height: 20px;width: 459px; text-align: start; margin-bottom: 0px;margin-top:10px; font-size:20px; font-family: inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif;">Fashion products</p>
+            <p style="margin:0px 160px;  margin-left:664px; bottom: 100px;background-color:white ; padding: 16px; height: 20px;width: 459px; text-align: start; margin-bottom: 0px;margin-top:10px; font-size:20px; font-family: inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif;"><h2>fash</h2>Fashion products</p> -->
+            <!-- <p style="margin:0px 160px;background-color:white ; padding: 16px; height: 20px;width: 459px; text-align: start; margin-bottom: 0px;margin-top:10px; font-size:20px; font-family: inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif;">Fashion products</p> -->
+            <h3 style=" position: relative; left: 160px; background-color:white; width: 490px; height:50px; margin-top: 0px;top: 120px;" >Fashion products
+               
+            </h3>
+            <h3 style="position: relative; background-color: white; width:490px; left: 662px;height:50px;margin-top: 10px;top: 60px;">Furniture products</h3>
+            <h3 style="position: relative; background-color: white;width: 480px; left: 1165px;height:50px;margin-top: 10px;">Electronic products</h3>
+         <div class="main" style="margin-top: 0px;">
+         
+            <div class="parent" style="width: 490px; ">
+                <div class="c1 child">
+                    <img src="https://rukminim1.flixcart.com/image/480/480/xif0q/kurta/x/f/6/xxl-new-white-nofilter-original-imaghzggudfezpr8.jpeg?q=60" alt="" width="190px" height="220px" style="margin:10px 10px;">
+                <p style="margin-left: 10px ; margin-bottom: 15px;">Shirts</p>
+                    
+                </div>
+               
+                <div class="c2 child">
+                    <img src="https://rukminim1.flixcart.com/image/240/240/xif0q/gown/g/2/a/na-l-full-sleeve-stitched-sneha-yellow-gown-l-torda-na-original-imaghtz3avvc6fgu.jpeg?q=90" alt="" width="190px" height="220px" style="margin-left: 10px; margin-top: 10px;">
+                <p style="margin-left: 10px ; margin-top: 10px;">Dresses</p>
+                </div>
+                <div class="c3 child">
+                    <img src="https://rukminim1.flixcart.com/image/240/240/xif0q/jacket/p/4/l/4xl-no-mt2-jkt-hood-windc-gone-white-red-strip-motrex-original-imah4kj2vgqcnd3e.jpeg?q=90" alt="" width="190px" height="220px" style="margin-left: 10px; margin-top: 10px;">
+                    <p  style="margin-left: 10px ; margin-top: 10px;">T-shirts</p>
+        
+                </div>
+                <div class="c4 child">
+                    <img src="https://rukminim1.flixcart.com/image/480/480/xif0q/sari/k/d/c/free-md-wb-sat6010-6-anand-sarees-no-blouse-original-imagyfgdqzssqzxp.jpeg?q=60" alt="" width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                    <p  style="margin-left: 10px ; margin-bottom: 10px;">Sarees</p>
+                </div>
+
+            </div>
+           
+            
+            <div class="g1" style="margin-left:2px;width: 490px;">
+                
+                <div class="c1 child">
+                    
+                 <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/wallpaper/k/p/t/400-45-1-dark-wood-texture-self-adhesive-400x45cm-wallpapers-s-r-original-imah2ypzzsqzugsg.jpeg?q=60" alt="" width="190px" height="220px" style="margin-left: 10px; margin-top: 10px;">
+                 <p  style="margin-left: 10px ; margin-top: 15px;">Furniture</p>
+                    
+
+                </div>
+                <div class="c2 child">
+                    <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/kitchen-rack/i/7/u/utensils-stand-house-of-common-original-imah44e2xnvpgcue.jpeg?q=60" alt="" width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                    <p  style="margin-left: 10px ; margin-bottom: 10px;">Hometool</p>
+                    
+                </div>
+                <div class="c3 child">
+                    <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/bottle/u/p/a/500-vacuum-insulated-flask-set-3cup-set-for-hot-cold-drink-original-imagmb6rvrdtyszt.jpeg?q=60" alt=""width="180px" height="220px" style="margin-left: 10px; margin-top: 10px;">
+                    <p style="margin-left: 10px ; margin-top: 10px;">cups</p>
+
+                </div>
+                <div class="c4 child">
+                    <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/collapsible-wardrobe/u/1/o/-original-imagtetcqema2mny.jpeg?q=60" alt=""width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                    <p  style="margin-left: 10px ; margin-bottom: 10px;">warddrobes</p>
+
+                </div>
+            </div>
+            
+
+            <div class="g2" style="margin-left: 25px; width: 480px;">
+                <div class="c1 child">
+                    <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/drone/c/5/b/100-45-1-e88-wifi-fpv-drone-with-wide-angle-hd-4k-1080p-camera-original-imahyvmwx6zgeyqx.jpeg?q=60" alt="" width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                 <p  style="margin-left: 10px ; margin-bottom: 10px;">cameras</p>
+
+
+                </div>
+                <div class="c2 child">
+                    <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/hair-dryer/v/5/a/1250-best-quality-hair-dryer-hair-comb-kribal-original-imaghwfgf5gruczn.jpeg?q=60" alt="" width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                    <p  style="margin-left: 10px ; margin-bottom: 10px;">Hair dryers</p>
+                    
+                </div>
+                <div class="c3 child">
+                    <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/shopsy-projector-screen/y/h/3/10-portable-mini-led-projector-with-remote-controller-hdmi-usb-original-imah2yxhpgvrrjfb.jpeg?q=60" alt="" width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                    <p  style="margin-left: 10px ; margin-bottom: 10px;">projectors</p>
+
+                </div>
+                <div class="c4 child">
+                    <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/computer/l/u/e/zl12-business-laptop-infinix-original-imah2gw5xg865ymw.jpeg?q=60" alt="" width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                    <p  style="margin-left: 10px ; margin-bottom: 10px;">laptop</p>
+
+                </div>
+            </div>
+
+            </div>
+
+
+        <!-- </div> -->
+        <h3 style=" position: relative; left: 160px; background-color:white; width: 490px; height:50px; margin-top: 0px;top: 120px;" >Fashion products
+               
+        </h3>
+        <h3 style="position: relative; background-color: white; width:490px; left: 662px;height:50px;margin-top: 10px;top: 60px;">Furniture products</h3>
+        <h3 style="position: relative; background-color: white;width: 480px; left: 1165px;height:50px;margin-top: 10px;">Electronic products</h3>
+     <div class="main" style="margin-top: 0px;">
+     
+        <div class="parent" style="width: 490px; ">
+            <div class="c1 child">
+                <img src="https://rukminim1.flixcart.com/image/480/480/xif0q/kurta/x/f/6/xxl-new-white-nofilter-original-imaghzggudfezpr8.jpeg?q=60" alt="" width="190px" height="220px" style="margin:10px 10px;">
+            <p style="margin-left: 10px ; margin-bottom: 15px;">Shirts</p>
+                
+            </div>
+           
+            <div class="c2 child">
+                <img src="https://rukminim1.flixcart.com/image/240/240/xif0q/gown/g/2/a/na-l-full-sleeve-stitched-sneha-yellow-gown-l-torda-na-original-imaghtz3avvc6fgu.jpeg?q=90" alt="" width="190px" height="220px" style="margin-left: 10px; margin-top: 10px;">
+            <p style="margin-left: 10px ; margin-top: 10px;">Dresses</p>
+            </div>
+            <div class="c3 child">
+                <img src="https://rukminim1.flixcart.com/image/240/240/xif0q/jacket/p/4/l/4xl-no-mt2-jkt-hood-windc-gone-white-red-strip-motrex-original-imah4kj2vgqcnd3e.jpeg?q=90" alt="" width="190px" height="220px" style="margin-left: 10px; margin-top: 10px;">
+                <p  style="margin-left: 10px ; margin-top: 10px;">T-shirts</p>
+    
+            </div>
+            <div class="c4 child">
+                <img src="https://rukminim1.flixcart.com/image/480/480/xif0q/sari/k/d/c/free-md-wb-sat6010-6-anand-sarees-no-blouse-original-imagyfgdqzssqzxp.jpeg?q=60" alt="" width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                <p  style="margin-left: 10px ; margin-bottom: 10px;">Sarees</p>
+            </div>
+
+        </div>
+       
+        
+        <div class="g1" style="margin-left:2px;width: 490px;">
+            
+            <div class="c1 child">
+                
+             <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/wallpaper/k/p/t/400-45-1-dark-wood-texture-self-adhesive-400x45cm-wallpapers-s-r-original-imah2ypzzsqzugsg.jpeg?q=60" alt="" width="190px" height="220px" style="margin-left: 10px; margin-top: 10px;">
+             <p  style="margin-left: 10px ; margin-top: 15px;">Furniture</p>
+                
+
+            </div>
+            <div class="c2 child">
+                <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/kitchen-rack/i/7/u/utensils-stand-house-of-common-original-imah44e2xnvpgcue.jpeg?q=60" alt="" width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                <p  style="margin-left: 10px ; margin-bottom: 10px;">Hometool</p>
+                
+            </div>
+            <div class="c3 child">
+                <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/bottle/u/p/a/500-vacuum-insulated-flask-set-3cup-set-for-hot-cold-drink-original-imagmb6rvrdtyszt.jpeg?q=60" alt=""width="180px" height="220px" style="margin-left: 10px; margin-top: 10px;">
+                <p style="margin-left: 10px ; margin-top: 10px;">cups</p>
+
+            </div>
+            <div class="c4 child">
+                <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/collapsible-wardrobe/u/1/o/-original-imagtetcqema2mny.jpeg?q=60" alt=""width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                <p  style="margin-left: 10px ; margin-bottom: 10px;">warddrobes</p>
+
+            </div>
+        </div>
+        
+
+        <div class="g2" style="margin-left: 25px; width: 480px;">
+            <div class="c1 child">
+                <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/drone/c/5/b/100-45-1-e88-wifi-fpv-drone-with-wide-angle-hd-4k-1080p-camera-original-imahyvmwx6zgeyqx.jpeg?q=60" alt="" width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+             <p  style="margin-left: 10px ; margin-bottom: 10px;">cameras</p>
+
+
+            </div>
+            <div class="c2 child">
+                <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/hair-dryer/v/5/a/1250-best-quality-hair-dryer-hair-comb-kribal-original-imaghwfgf5gruczn.jpeg?q=60" alt="" width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                <p  style="margin-left: 10px ; margin-bottom: 10px;">Hair dryers</p>
+                
+            </div>
+            <div class="c3 child">
+                <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/shopsy-projector-screen/y/h/3/10-portable-mini-led-projector-with-remote-controller-hdmi-usb-original-imah2yxhpgvrrjfb.jpeg?q=60" alt="" width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                <p  style="margin-left: 10px ; margin-bottom: 10px;">projectors</p>
+
+            </div>
+            <div class="c4 child">
+                <img src="https://rukminim2.flixcart.com/image/480/480/xif0q/computer/l/u/e/zl12-business-laptop-infinix-original-imah2gw5xg865ymw.jpeg?q=60" alt="" width="190px" height="230px" style="margin-left: 10px; margin-top: 10px;">
+                <p  style="margin-left: 10px ; margin-bottom: 10px;">laptop</p>
+
+            </div>
+        </div>
+
+        </div>
+        
+
+    </div>
+
+    <!--toys flex container-->
+    <p style="margin: 0px 160px;height: 30px; background-color: white;font-size:20px;font-family:
+    inter_semi_bold, fallback-inter_semi_bold, Arial, sans-serif; text-align: start; padding: 18px 22px ;margin-top: 80px;" >Best Of Electronics</p>
+        <div class="container">
+           
+    
+            <div class="items">
+                <img style="height: 180px; width: 50px;" src="https://rukminim2.flixcart.com/image/210/210/kcf4lu80/speaker/mobile-tablet-speaker/h/u/f/srs-xb23-sony-original-imaftk66vjxp86h5.jpeg?q=90" alt="">
+                <p>Speaker</p>
+            </div>
+            <div class="items">
+                <img  style="height: 180px; width: 150px;" src="https://rukminim2.flixcart.com/image/420/420/xif0q/monitor/n/r/g/-original-imagyr8vrpzzgrac.jpeg?q=60" alt="">
+                <p>Television</p>
+            </div>
+            <div class="items">
+                <img  style="height: 180px; width: 150px;" src="https://rukminim2.flixcart.com/image/210/210/xif0q/projector/b/4/t/i9-pro-10-ei9027-led-projector-egate-original-imah3t9zfxufhdze.jpeg?q=90" alt="">
+                <p>projector</p>
+            </div>
+            <div class="items">
+                <img style="height: 180px;width: 150px;" src="https://rukminim2.flixcart.com/image/420/420/xif0q/monitor/c/n/8/-original-imahf4rbgwtzquxh.jpeg?q=60" alt="">
+                <p>System</p>
+    
+            </div>
+            <div class="items">
+                <img style="height: 190px;width: 100px;" src="https://rukminim2.flixcart.com/image/420/420/kpsnzww0/external-hard-drive/ssd/t/9/7/portable-ssd-sdssde30-1t00-g25-sandisk-original-imag3xx564jxpgrb.jpeg?q=60" alt="">
+            <p> Sanddisk</p>
+            </div>
+            <div class="items">
+                <img style="height: 180px; width: 150px;" src="https://rukminim2.flixcart.com/image/420/420/k3rmm4w0/point-shoot-camera/f/n/v/kids-point-and-shoot-digital-camera-point-and-shoot-kids-point-original-imafknpazf7dhses.jpeg?q=60" alt="">
+                <p>Camera</p>
+            </div><br>
+        </div>
+
+       <section><h1 style="margin: 20px 15px;">About Flipkart</h1><p style="margin: 20px 15px;"> In July 2019, Flipkart launched Samarth program that supported local artisans, weavers, and craftspersons that traditionally are only able to sell locally.[50] The Samarth program supports with onboarding and helping 
+        them sell their products online beyond their local markets, and across the country. Apart from the onboarding, the program also helps with other processes of selling online such as cataloging, warehousing support etc.[51][52]. Flipkart invested US$4 million
+        in the customer engagement and rewards platform EasyRewardz - a business-to-business loyalty management platform on 19 November 2019.[53][54] The platform supports the management of loyalty points among banks and brands.[55]. In 2020, Flipkart launched 
+         Flipkart Wholesale, a novel online marketplace that provided a digital platform for kiranas and MSMEs.[56] As a part of the same initiative around Flipkart Wholesale, Flipkart also acquired 100% stake in Walmart India Private Limited operating Best Price
+        cash-and-carry business to further strengthen the wholesale capabilities.[57]. In July 2020, Flipkart acquired a 27% stake in Arvind Fashions Limited's newly formed subsidiary Arvind Youth Brands for US$35 million. Arvind Youth Brands owns the Flying Machine
+        brand.[58] Flipkart also rolled out Flipkart Quick, a hyperlocal 90-minute delivery service for product categories such as groceries, home accessories, mobile phones, stationery, and more.[59],In October 2020, Flipkart acquired a 7.8% stake in Aditya Birla Fashion 
+        and Retail for US$204 million.[60][61] The following month, Flipkart acquired the intellectual property of gaming startup Mech Mocha for an undisclosed amount.[62] The acquisition formed part of Flipkart's plans to gain and retain users by offering casual games.[63] 
+        In November 2020, Flipkart acquired augmented reality company Scapic, which provides a suite of tools to create and publish augmented reality, virtual reality, and 3D content quickly and without coding.[64]. As of 2021, the Flipkart app was available in 8 local Indian 
+        languages, Gujarati, Bengali, Odia, Hindi, Telugu, Kannada, Marathi and Tamil.[65].In April 2021, Flipkart announced the acquisition of the travel booking portal Cleartrip.[66] Flipkart also entered the hotel industry for the Indian and global markets. The Flipkart Hotels
+        uses Cleartrip API.[67] Flipkart acquired Cleartrip's business in Middle East by signing a definitive agreement with Wego - an online market place for travel that operates in middle east and North Africa. This included the sale of the website Flyin.com.[68]
+        <h1 style="margin: 20px 15px;">flipkart </h1><p style="margin: 20px 15px;">
+        The Flipkart Group is one of India's leading digital commerce entities and includes group companies Flipkart, Myntra, Flipkart Wholesale, Flipkart Health+ and Cleartrip. The Group is also a majority shareholder in PhonePe, one of the leading Payments Apps in India.
+
+Started in 2007, Flipkart has enabled millions of consumers, sellers, merchants, and small businesses to be a part of India's digital commerce revolution, with a registered customer base of more than 400 million, offering over 150 million products across 80+ categories. Our efforts to democratize commerce in India, drive access and affordability, delight customers, create lakhs of jobs in the ecosystem, and empower generations of entrepreneurs and MSMEs have inspired us to innovate on many industry firsts. Flipkart is known for pioneering services such as Cash on Delivery, No Cost EMI and easy returns – customer-centric innovations have made online shopping more accessible and affordable for millions of Indians. Together with its group companies, Flipkart is committed to transforming commerce in India through technology.
+
+With Catapult, Flipkart aims to provide an umbrella solution to a budding brand's financing & marketing needs. The program offers marketing solutions and capital for new age direct-to-consumer brands to leapfrog into their next phase of growth. The offering goes beyond financing the brands by providing creative services and effective acquisition cost reduction solutions.
+
+For more information on the flipkart Ads kindly write to us at catapult@flipkart.com
+
+To know more about the ad experiences being offered by Flipkart, visit brands.flipkart.com</p>
+        </p></section>
+        
+        <div class="footer" style=" padding: 20px;" >
+           
+               <div class="one box " style=" width: 20%; margin-left: 10px;"><b>About</b>
+               <ul style="list-style-type: none;margin-top: 20px;">
+                <li>Contact us</li>
+                <li>About us</li>
+                <li>Careeers</li>
+                <li>Flipkart stories</li>
+                <li>Press</li>
+                <li>corporate information</li>
+               </ul>
+               </div>
+               <div class="two box"><b>Group companies</b>
+                <ul style="list-style-type: none;margin-top: 20px;">
+                    <li>Myntra</li>
+                    <li>Shopsy</li>
+                    <li>Cleartrip</li>
+                </ul>
+            
+                </div>
+               <div class="three box"><b>Help</b>
+                <ul style="list-style-type: none;margin-top: 20px;">
+                    <li>Payment</li>
+                    <li>Shipping</li>
+                    <li>Cancellation and Refunds</li>
+                    <li>FAQ</li>
+                    <LI>Report infrigment</LI>
+                </ul>
+            
+            
+                </div>
+               <div class="four box"><b>Consumer policy</b>
+                <ul style="list-style-type: none; margin-top: 20px;">
+                    <li>Cancellation and Returns</li>
+                    <li>Terms of use</li>
+                    <li>privacy</li>
+                    <li>security</li>
+                    <li>EPR Complainces</li>
+                    <li>sitemap</li>
+
+                </ul>
+            
+              </div>
+             <div class="five box"><b >Mail us:</b>
+                <p style="margin-top: 20px;">Flipkart Internet private limited,Buildings alyssa begonia & clove embassy tech village,Outer ring road,Devarabeesanahalli village,Bengaluru,560103,karnataka, india.
+
+                </p>
+
+            </div>
+               <div class="six box"><b>Registered office Address:</b>
+                <p style="margin-top: 20px;">Flipkart internet private limited,Bulidings Alyssa,begonia & Clove Embassy Tech village,Outer ring road,Devarabeesanahalli village,Bengaluru,560103,karnataka,India <br>
+                CIN:U51111U7HH66107<BR>
+                    Telephone<em style="color: rgb(106, 106, 236);">:044-45164700/044-67415800</em></p>
+            </div>
+           
+                
+       
+               
+                
+
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+     </div>
+</body>
+</html>
